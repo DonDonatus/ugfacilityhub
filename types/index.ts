@@ -31,7 +31,7 @@ export interface User {
   id: number;
   name: string;
   email: string;
-  role: "student" | "admin";
+  role: "STUDENT" | "ADMIN";
 }
 
 export interface TimeSlot {
