@@ -36,22 +36,7 @@ export default async function Home() {
         </Link>
       </section>
 
-      {/* Stats */}
-      <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-20">
-        {[
-          { label: "Total Facilities", value: facilities.length > 0 ? facilities.length : "--" },
-          { label: "Available Today", value: "--" },
-          { label: "Total Bookings", value: "--" },
-        ].map((stat) => (
-          <div
-            key={stat.label}
-            className="bg-white border border-[rgba(0,0,0,0.08)] rounded-xl p-6 text-center"
-          >
-            <div className="text-[#C8A456] text-4xl font-bold mb-1">{stat.value}</div>
-            <div className="text-[#555555] text-sm">{stat.label}</div>
-          </div>
-        ))}
-      </section>
+     
 
       {/* Facilities preview */}
       {preview.length > 0 && (
